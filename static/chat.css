@@ -1,0 +1,111 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    /* Increased width */
+    height: 600px;
+    /* Increased height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+    /* Prevents overflow from breaking the layout */
+}
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 480px;
+    /* Adjusted max height */
+    font-size: 16px;
+    /* Increased font size for better readability */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#user-input {
+    width: 80%;
+    padding: 15px;
+    /* Increased padding for a larger input field */
+    font-size: 18px;
+    /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    min-height: 50px;
+    /* Ensure the input field is large */
+}
+
+#send-btn {
+    width: 15%;
+    padding: 15px;
+    /* Increased button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-height: 50px;
+    /* Ensure the button is large */
+}
+
+#send-btn:hover {
+    background-color: #45a049;
+}
+
+#send-btn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+.message {
+    padding: 12px 20px;
+    /* Larger padding for messages */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    max-width: 75%;
+    font-size: 18px;
+    /* Increased font size for messages */
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
